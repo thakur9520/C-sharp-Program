@@ -231,3 +231,82 @@ namespace Inputoutput
         }
     }
 }
+
+
+// 9. Create a C# program that removes all duplicates from an integer array using loops and additional data structures
+
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] numbers = { 1, 2, 2, 3, 4, 4, 5, 6, 6, 7 };
+        int[] uniqueNumbers = RemoveDuplicates(numbers);
+
+        Console.WriteLine("Original Array: " + string.Join(", ", numbers));
+        Console.WriteLine("Array with Duplicates Removed: " + string.Join(", ", uniqueNumbers));
+    }
+
+    static int[] RemoveDuplicates(int[] arr)
+    {
+        HashSet<int> uniqueSet = new HashSet<int>();
+        List<int> result = new List<int>();
+
+        foreach (int num in arr)
+        {
+            if (!uniqueSet.Contains(num))
+            {
+                uniqueSet.Add(num);
+                result.Add(num);
+            }
+        }
+
+        return result.ToArray();
+        Console.ReadLine();
+    }
+}
+
+
+
+// 10. Write a C# program that finds the common elements between two integer arrays using loops
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] array1 = { 1, 2, 3, 4, 5 };
+        int[] array2 = { 3, 4, 5, 6, 7 };
+
+        int[] commonElements = FindCommonElements(array1, array2);
+
+        Console.WriteLine("Common Elements: " + string.Join(", ", commonElements));
+    }
+
+    static int[] FindCommonElements(int[] arr1, int[] arr2)
+    {
+        System.Collections.Generic.List<int> commonElementsList = new System.Collections.Generic.List<int>();
+        foreach (int num1 in arr1)
+        {
+            foreach (int num2 in arr2)
+            {
+                if (num1 == num2)
+                {
+                    if (!commonElementsList.Contains(num1))
+                    {
+                        commonElementsList.Add(num1);
+                    }
+                    break;
+                }
+            }
+        }
+        return commonElementsList.ToArray();
+        Console.ReadLine();
+
+    }
+}
