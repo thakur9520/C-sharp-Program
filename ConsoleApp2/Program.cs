@@ -170,7 +170,6 @@ namespace Inputoutput
                 {
                     index = i; break;
                 }
-
             }
             Console.WriteLine(index);
         }
@@ -242,7 +241,6 @@ class Program
                 result.Add(num);
             }
         }
-
         return result.ToArray();
         Console.ReadLine();
     }
@@ -282,6 +280,5 @@ class Program
         }
         return commonElementsList.ToArray();
         Console.ReadLine();
-
     }
 }
