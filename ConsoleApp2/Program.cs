@@ -1,7 +1,6 @@
 ﻿//1. Write a C# program to find the sum of all elements in an integer array using a loop.
 
 using System;
-
 namespace Inputoutput
 {
     internal class Program
@@ -24,7 +23,6 @@ namespace Inputoutput
 
 // 2. Create a C# program that calculates the average of values in a floating-point array using a loop
 using System;
-
 namespace Inputoutput
 {
     internal class Program
@@ -48,8 +46,6 @@ namespace Inputoutput
 // 3. Develop a C# program that finds the largest element in an integer array using a loop and if-else statements.
 
 using System;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -76,9 +72,6 @@ namespace Inputoutput
 // 4.  Write a C# program that counts the number of even and odd elements in an integer array using a loop and if-else statements.
 
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -105,9 +98,6 @@ namespace Inputoutput
 
 
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -138,9 +128,6 @@ namespace Inputoutput
 
 
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -167,9 +154,6 @@ namespace Inputoutput
 
 
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -198,9 +182,6 @@ namespace Inputoutput
 
 
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-
 namespace Inputoutput
 {
     internal class Program
@@ -237,15 +218,12 @@ namespace Inputoutput
 
 
 using System;
-using System.Collections.Generic;
-
 class Program
 {
     static void Main(string[] args)
     {
         int[] numbers = { 1, 2, 2, 3, 4, 4, 5, 6, 6, 7 };
         int[] uniqueNumbers = RemoveDuplicates(numbers);
-
         Console.WriteLine("Original Array: " + string.Join(", ", numbers));
         Console.WriteLine("Array with Duplicates Removed: " + string.Join(", ", uniqueNumbers));
     }
@@ -275,19 +253,15 @@ class Program
 
 
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
         int[] array1 = { 1, 2, 3, 4, 5 };
         int[] array2 = { 3, 4, 5, 6, 7 };
-
         int[] commonElements = FindCommonElements(array1, array2);
-
         Console.WriteLine("Common Elements: " + string.Join(", ", commonElements));
     }
-
     static int[] FindCommonElements(int[] arr1, int[] arr2)
     {
         System.Collections.Generic.List<int> commonElementsList = new System.Collections.Generic.List<int>();
