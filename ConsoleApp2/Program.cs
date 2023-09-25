@@ -22,6 +22,7 @@ namespace Inputoutput
 
 
 // 2. Create a C# program that calculates the average of values in a floating-point array using a loop
+
 using System;
 namespace Inputoutput
 {
